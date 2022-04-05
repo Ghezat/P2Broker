@@ -96,6 +96,7 @@
         .homeMiddleTable{
             width: 70%;
             overflow-y: auto;
+            overflow-x: auto;
         }
 
 
@@ -140,6 +141,7 @@
             border: none;
             transition: all 0.2s ease;
         }
+
         .btn-start:hover{
            width:262px;
            height: 48px;
@@ -277,9 +279,6 @@
     overflow-y: auto;
 }  
 
-.manualContainer{
-  /*  border: 2px solid saddlebrown; */
-}  
 
 .footer-father{
     color: #e4e4e4;
@@ -723,3 +722,162 @@
      }
  
 }
+
+
+@media screen and (min-width: 280px) and (max-width: 314px) {
+
+    .titulo{
+        text-align: center;
+        font-size: large;
+       
+    }
+
+    .homeMiddleData-Container{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+     
+    }
+
+    .homeMiddleData{
+        width: 100%;
+    }
+
+    .messageData{
+        width: 100%;
+    }
+
+    .homeMiddle{
+      
+        height: 30%;
+        padding: 20px 0px;
+      
+     
+    }
+    .homeMiddleTable{
+        overflow-y: scroll;
+        border: 1px solid brown;
+    }
+
+    
+    .homeDown{
+
+        flex-direction: column;
+        height: auto;
+    }
+
+    .homeDown-izq{
+        text-align: center;
+        width: 100%;
+        padding: 30px 40px;
+    }
+
+        .homeDown-p{
+            font-size: large;
+        }
+
+    .homeDown-der{
+        width: 100%;
+        padding: 30px 30px;
+    }
+
+    .p-messageData{
+        text-align: center;
+    }
+
+    .containerUpFooter{
+        flex-direction: column;
+        border-bottom: 1px solid #bbbbbb;
+        padding: 10px;
+       
+    }
+
+    .supportFooter{
+        padding: 5px 10px;
+        border-left: 1px solid #7c7c7c;
+
+    }
+
+    .communityFooter{
+        padding: 5px 10px;
+        border-left: 1px solid #7c7c7c;
+    }
+
+    .section-father{
+        flex-direction: column;
+        height: auto;
+     
+    }
+
+    .inputForm{
+        display: flex;
+        flex-direction: column;
+        border-right: 3px solid #bbbbbb;
+        width: 100%;
+        padding: 10px;
+    }
+
+            .CantPrecioContainer{
+                justify-content: flex-start;
+            }
+
+            .hashContainer{
+                justify-content: flex-start;
+               
+            }
+
+                .hash{
+                    width: 100%;
+                }
+
+    .outputList{
+        width: 100%;
+        padding: 0px 2px;
+    }
+
+    .information{
+        width: 100%;
+    }
+
+    .publication{
+        justify-content: center;
+        margin: 20px;
+        width: 90%;
+        height: auto; 
+    }
+
+    .imagenPublicar{
+        width: 90%;
+    }
+    .imgPublicacion{
+        width: 250px;
+    }
+
+    .masterPublic{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+     }
+
+     .btn-start{
+        background-color: #5f3434;
+        color: rgb(247, 237, 225);
+        width: 180px;
+        height: 45px;
+        border-radius: 6px;
+        border: none;
+        transition: all 0.2s ease;
+    }
+    
+    .btn-start:hover{
+       width:182px;
+       height: 48px;
+       border: none;
+    }
+
+ 
+}
+
+
