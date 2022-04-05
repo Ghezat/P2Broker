@@ -16,7 +16,7 @@
 
 .header-father{
     background-color: gainsboro;
-    box-shadow: 3px 1px 5px 3px;
+    box-shadow: 2px 1px 3px 1px;
 }
 
 .section-home-father{
@@ -118,8 +118,8 @@
         .homeDown-p{
             margin: 0;
         }
+
         .spanRIC{
-            
             color: #2b0303;
         }
 
@@ -151,7 +151,7 @@
 .section-father{
     display: flex;
     height: 75vh;
-    /* border: 6px solid rgb(67, 165, 42); */
+   
 }
 
 
@@ -160,7 +160,7 @@
     display: flex;
     flex-direction: column;
     border-right: 3px solid #bbbbbb;
-    width: 25%;
+    width: 20%;
     padding: 10px;
 }
 
@@ -202,10 +202,10 @@
 
     }
 
-    .orden{
-        border: 1px solid blue;
+    /* .orden{
+        border: 6px solid blue;
         margin: 10px 0px;
-    }
+    } */
 
     .CantPrecioContainer, .hashContainer{
         display: flex;
@@ -244,19 +244,17 @@
 
 .outputList{
     display: flex;
-    width: 100%;
+    width: 60%;
     margin-top: 6px;
     background-color: #bbbbbb;
     
 }
 
 .tableContainer{
-    width: 75%;
+    width:100%;
     height: 100%;
     border-right: 3px solid #bbbbbb;
-    border: 2px solid red;
-   
-   
+       
 }
 
     .tablaPadre{
@@ -274,13 +272,14 @@
     
     }
 
-  
+.information{
+    width: 20%;
+    overflow-y: auto;
+}  
 
 .manualContainer{
-   /*  border: 5px solid rgb(0, 255, 255); */
-    width: 25%;
-    overflow-y:scroll;
-}
+  /*  border: 2px solid saddlebrown; */
+}  
 
 .footer-father{
     color: #e4e4e4;
@@ -321,12 +320,10 @@
 
 
 
-
 .publication{
     margin: 20px;
     width: 50%;
     height: auto;
-   
    
 }
 
@@ -345,7 +342,7 @@
         width: 85%;
     }
 
-.imagenPulicar{
+.imagenPublicar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,7 +352,7 @@
     
 }
 
-    .imgPlicacion{
+    .imgPublicacion{
         width: 500px;
         
     }
@@ -371,7 +368,7 @@
 
 /* ----------responsive---------- */
 
-@media screen and (min-width: 750px) and (max-width: 1100px) { 
+@media screen and (min-width: 750px) and (max-width: 1200px) { 
 
 
     .titulo{
@@ -413,6 +410,29 @@
     }
 
 
+    .tableContainer{
+        width: 100%;
+        height: 100%;
+        border-right: 3px solid #bbbbbb;
+       
+              
+    }
+
+    .section-father{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+       
+    }
+
+    .inputForm{
+        display: flex;
+        flex-direction: row;
+        border-right: 3px solid #bbbbbb;
+        width: 100%;
+        padding: 10px;
+    }
+
     .outputList{
         display: flex;
         flex-direction: column;
@@ -422,21 +442,34 @@
         
     }
 
-    .tableContainer{
+    .information{
         width: 100%;
-        height: 100%;
-        border-right: 3px solid #bbbbbb;
-        border: 2px solid red;
-       
-       
+        overflow-y: auto;
+    }  
+
+    .publication{
+        justify-content: center;
+        margin: 20px;
+        width: 80%;
+        height: auto; 
+    }
+    .imagenPublicar{
+        width: 80%;
+    }
+    .imgPublicacion{
+        width: 400px;
     }
 
+    .masterPublic{
+       flex-direction: column;
+       justify-content: center;
+    }
 
 
 }
 
 
-@media screen and (min-width: 500px) and (max-width: 750px) {
+@media screen and (min-width: 500px) and (max-width: 749px) {
 
     .titulo{
         text-align: center;
@@ -497,6 +530,70 @@
     .communityFooter{
         padding: 5px 20px;
     }
+
+    
+
+    .section-father{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .inputForm{
+        display: flex;
+        flex-direction: column;
+        border-right: 3px solid #bbbbbb;
+        width: 100%;
+        padding: 10px;
+    }
+    
+  
+
+        .CantPrecioContainer{
+            justify-content: flex-start;
+        }
+
+        .hashContainer{
+            justify-content: flex-start;
+        }
+
+    .outputList{
+        width: 100%;
+        padding: 0px 2px;
+        height: 30vh;
+       
+    }
+
+        .tablaPadre{
+            height: 65%;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+
+    .information{
+        width: 100%;
+    }
+
+    .publication{
+        justify-content: center;
+        margin: 20px;
+        width: 80%;
+        height: auto; 
+    }
+
+    
+    .imagenPublicar{
+        width: 80%;
+    }
+    .imgPublicacion{
+        width: 400px;
+    }
+
+    .masterPublic{
+        flex-direction: column;
+        justify-content: center;
+     }
+ 
+
 }
 
 
@@ -568,4 +665,61 @@
     .communityFooter{
         padding: 5px 20px;
     }
+
+    .section-father{
+        flex-direction: column;
+        height: auto;
+     
+    }
+
+    .inputForm{
+        display: flex;
+        flex-direction: column;
+        border-right: 3px solid #bbbbbb;
+        width: 100%;
+        padding: 10px;
+    }
+
+            .CantPrecioContainer{
+                justify-content: flex-start;
+            }
+
+            .hashContainer{
+                justify-content: flex-start;
+               
+            }
+
+                .hash{
+                    width: 100%;
+                }
+
+    .outputList{
+        width: 100%;
+        padding: 0px 2px;
+    }
+
+    .information{
+        width: 100%;
+    }
+
+    .publication{
+        justify-content: center;
+        margin: 20px;
+        width: 90%;
+        height: auto; 
+    }
+
+    .imagenPublicar{
+        width: 90%;
+    }
+    .imgPublicacion{
+        width: 250px;
+    }
+
+    .masterPublic{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+     }
+ 
 }
