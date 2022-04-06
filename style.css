@@ -212,19 +212,19 @@
     .CantPrecioContainer, .hashContainer{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         margin-bottom: 10px;
     }
 
    
     .cantR{
         width: 150px;
-        margin-right: 10px;
-        
+        margin-right: 5px;
+            
     }
 
     .precioR{
-        width: 75px;
+        width: 71px;  
         
     }
 

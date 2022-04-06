@@ -1,4 +1,4 @@
-import{tableDone,aSell, addressValue} from "./dinamic.js"
+import{aSell, addressValue} from "./dinamic.js"
 
 let sumaTotal = document.querySelector('#sumaTotal')
 let cantOrdenes = document.querySelector('#cantOrdenes')
