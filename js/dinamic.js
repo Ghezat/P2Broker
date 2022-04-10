@@ -1,9 +1,13 @@
 export{tableDone,aSell, addressValue}
 
-let addressValue = '0xE9464Fde8B6608DFa65d19d9226444A9F3B03268';
+
+ 
+let addressValue = '0xF0a29e03773dD30D85C28B15745186e2047F3EA6';
 let tableDone = document.getElementById('tableDone')
 
-const aSell = [{ precio : 0, cant : 0, total : 0, hash : "sin datos"}
+
+
+const aSell = [{ precio : 0.000050, cant : 1000000000, total : 50000, hash : "0xd39625fd722e63eddc2f1bf19b5eff23779c3bd4d502fc5119ab9ee9dad84ab5"}
               ] 
               
                aSell.sort((a, b) => a.precio - b.precio );//esta linea ordena la matriz de forma ascendente.
@@ -20,4 +24,9 @@ function Selli(){
 Selli();
  
 
+
+              
+
+
+              
 

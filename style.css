@@ -40,6 +40,7 @@
             align-items: center;
             font-size: x-large;
             padding: 30px;
+            color: #5f3434;
             
         }
 
@@ -156,7 +157,12 @@
    
 }
 
-
+.section-father-history{
+    display: flex;
+    height: 68vh;
+    overflow: auto;
+   
+}
 
 .inputForm{
     display: flex;
@@ -247,6 +253,14 @@
 .outputList{
     display: flex;
     width: 60%;
+    margin-top: 6px;
+    background-color: #bbbbbb;
+    
+}
+
+.outputHistory{
+    display: flex;
+    width: 100%;
     margin-top: 6px;
     background-color: #bbbbbb;
     
@@ -421,6 +435,13 @@
         display: flex;
         flex-direction: column;
         height: auto;
+       
+    }
+
+    .section-father-history{
+        display: flex;
+        flex-direction: column;
+    
        
     }
 

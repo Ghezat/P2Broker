@@ -23,6 +23,7 @@ let tableNew = document.getElementById('tableNew')
 
 
 
+
 /* ---------evento al levantar la pagina-------- */
 
 window.addEventListener('load', ()=> {
@@ -32,7 +33,7 @@ window.addEventListener('load', ()=> {
        /*  console.log(orderVenta) */
     
         tableNew.innerHTML +=
-     `<tr> <td>${orderVenta.precioV}</td> <td>${orderVenta.cantidadV}</td><td>${orderVenta.totalV}</td><td>${orderVenta.hashV}</td><td><span class="bg-danger px-2"><a href="http://127.0.0.1:5500/ventaPublic.html" class="alinkPublic"><i class="bi bi-file-earmark-text"></i></a></span></td></tr>`
+     `<tr> <td>${orderVenta.precioV}</td> <td>${orderVenta.cantidadV}</td><td>${orderVenta.totalV}</td><td>${orderVenta.hashV}</td><td><span class="bg-danger px-2"><a href="ventaPublic.html" class="alinkPublic"><i class="bi bi-file-earmark-text"></i></a></span></td></tr>`
     
        
     }
@@ -41,8 +42,10 @@ window.addEventListener('load', ()=> {
         let orderCompra =  JSON.parse(localStorage.getItem('compra'))                                                                               
      /*    console.log(orderCompra) */
         tableNew.innerHTML +=
-     `<tr><td>${orderCompra.precioC}</td><td>${orderCompra.cantidadC}</td><td>${orderCompra.totalC}</td><td>${orderCompra.hashC}</td><td><span class="bg-success px-2"><a href="http://127.0.0.1:5500/compraPublic.html" class="alinkPublic"><i class="bi bi-bag"></i></a></span></td></tr>`
-    }                                                                                                                                                                 
+     `<tr><td>${orderCompra.precioC}</td><td>${orderCompra.cantidadC}</td><td>${orderCompra.totalC}</td><td>${orderCompra.hashC}</td><td><span class="bg-success px-2"><a href="compraPublic.html" class="alinkPublic"><i class="bi bi-bag"></i></a></span></td></tr>`
+    } 
+    
+         
 
 });
 
@@ -90,7 +93,7 @@ function vender(){
    let hasV = hashV.value
     if (hasV.length == 66 && totalV.value >=1000) {     
         tableNew.innerHTML +=
-        `<tr><td>${precioV.value}</td><td>${cantidadV.value}</td><td>${totalV.value}</td><td>${hashV.value}</td><td><span class="bg-danger px-2"> <a href="http://127.0.0.1:5500/ventaPublic.html" class="alinkPublic"><i class="bi bi-file-earmark-text"></i></a></span></td></tr>`
+        `<tr><td>${precioV.value}</td><td>${cantidadV.value}</td><td>${totalV.value}</td><td>${hashV.value}</td><td><span class="bg-danger px-2"> <a href="ventaPublic.html" class="alinkPublic"><i class="bi bi-file-earmark-text"></i></a></span></td></tr>`
         
         const valores = {
             cantidadV: cantidadV.value,
@@ -204,7 +207,7 @@ function comprar(){
     let hasC = hashC.value
     if (hasC.length == 66 && totalC.value >=1000) {  
      tableNew.innerHTML +=
-     `<tr><td>${precioC.value}</td><td>${cantidadC.value}</td><td>${totalC.value}</td><td>${hashC.value}</td><td><span class="bg-success px-2"><a href="http://127.0.0.1:5500/compraPublic.html" class="alinkPublic"><i class="bi bi-bag"></i></a></span></td></tr>`
+     `<tr><td>${precioC.value}</td><td>${cantidadC.value}</td><td>${totalC.value}</td><td>${hashC.value}</td><td><span class="bg-success px-2"><a href="compraPublic.html" class="alinkPublic"><i class="bi bi-bag"></i></a></span></td></tr>`
      
      const valores = {
          cantidadC: cantidadC.value,
