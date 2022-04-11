@@ -6,7 +6,8 @@ let addETH = document.getElementById('addETH')
 let addBSC = document.getElementById('addBSC')
 
 
-/* ----------ontencion de datos para el home------- */
+
+/* ----------obtencion de datos para el home------- */
 
 const aTotal = [];
 let aTotalSuma = 0
@@ -28,3 +29,10 @@ cantOrdenes.innerHTML = aSell.length
 addETH.innerHTML = addressValue;
 addBSC.innerHTML = addressValue;
 /* ----------------------------------------------------- */
+
+
+    setTimeout(mensageInitial, 3000) 
+    
+    function mensageInitial(){
+        toastr["warning"]("para ver la pagina actualizada deberá de borrar historial y cookies diariamente antes de acceder!", "P2Broker")
+    }

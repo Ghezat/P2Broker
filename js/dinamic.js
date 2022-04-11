@@ -7,7 +7,7 @@ let tableDone = document.getElementById('tableDone')
 
 
 
-const aSell = [{ precio : 0.000050, cant : 1000000000, total : 50000, hash : "0xd39625fd722e63eddc2f1bf19b5eff23779c3bd4d502fc5119ab9ee9dad84ab5"}
+const aSell = [{ precio : 0.000050, cant : 1000000000, total : 50000, hash : "0x2f78679f0fce5210867110b3d82b93fadc2df1bac2baef2dec69dade20352ac8"}
               ] 
               
                aSell.sort((a, b) => a.precio - b.precio );//esta linea ordena la matriz de forma ascendente.

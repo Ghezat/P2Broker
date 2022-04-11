@@ -10,9 +10,7 @@ function showHistory(){
     }
 };
 
-
 showHistory(); 
-
 
 console.log(aHistorico)
 

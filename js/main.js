@@ -2,6 +2,7 @@ import{tableDone,aSell, addressValue} from "./dinamic.js"
 
 let copyBtn = document.getElementById('copy-btn');
 let address = document.getElementById('address');
+let addInfo = document.getElementById('address_Information');
 let addressDirection = document.getElementById('Direcction')
 let copySpan = document.querySelector('#copySpan');
 
@@ -45,9 +46,10 @@ window.addEventListener('load', ()=> {
      `<tr><td>${orderCompra.precioC}</td><td>${orderCompra.cantidadC}</td><td>${orderCompra.totalC}</td><td>${orderCompra.hashC}</td><td><span class="bg-success px-2"><a href="compraPublic.html" class="alinkPublic"><i class="bi bi-bag"></i></a></span></td></tr>`
     } 
     
-         
-
+       
+    
 });
+
 
 
 /* ----------------------------------------------- */
@@ -62,6 +64,8 @@ let addressDos = addressValue.substring(35, addressValue.length);
 address.innerText = addressUno + "..." + addressDos;
 addressDirection.value = addressValue
 
+addInfo.innerHTML = addressValue; //direccion en la seccion infromatcion
+console.log(addressValue + " aqui la informacion de la cartera")
 
 /* ----------copiar wallet address--------- */
 
@@ -91,7 +95,7 @@ btnComprar.addEventListener('click', comprar)
 
 function vender(){
    let hasV = hashV.value
-    if (hasV.length == 66 && totalV.value >=1000) {     
+    if (hasV.length == 66 && totalV.value >=500) {     
         tableNew.innerHTML +=
         `<tr><td>${precioV.value}</td><td>${cantidadV.value}</td><td>${totalV.value}</td><td>${hashV.value}</td><td><span class="bg-danger px-2"> <a href="ventaPublic.html" class="alinkPublic"><i class="bi bi-file-earmark-text"></i></a></span></td></tr>`
         
@@ -184,13 +188,20 @@ precioC.addEventListener('change', ()=>{
 }); 
 
 totalC.addEventListener('change', ()=>{
-    if (cantidadC.value ==="" && precioC !=="") {
-        let p = (totalC.value / precioC.value)
-        cantidadC.value = p.toFixed(2)
+    if (totalC.value >= 500) {
+        if (cantidadC.value ==="" && precioC !=="") {
+            let p = (totalC.value / precioC.value)
+            cantidadC.value = p.toFixed(2)
+        } else {
+            let y =  (totalC.value / cantidadC.value)
+            precioC.value = y.toFixed(6)
+        }
     } else {
-        let y =  (totalC.value / cantidadC.value)
-        precioC.value = y.toFixed(6)
-}
+
+        totalC.value = "";
+        toastr["error"]("operación minima $500", "P2Broker")
+    };
+
 });
 
 hashC.addEventListener('change', ()=>{
@@ -205,7 +216,7 @@ hashC.addEventListener('change', ()=>{
 
 function comprar(){
     let hasC = hashC.value
-    if (hasC.length == 66 && totalC.value >=1000) {  
+    if (hasC.length == 66 && totalC.value >=500) {  
      tableNew.innerHTML +=
      `<tr><td>${precioC.value}</td><td>${cantidadC.value}</td><td>${totalC.value}</td><td>${hashC.value}</td><td><span class="bg-success px-2"><a href="compraPublic.html" class="alinkPublic"><i class="bi bi-bag"></i></a></span></td></tr>`
      

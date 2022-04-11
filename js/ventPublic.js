@@ -23,6 +23,7 @@ let venta = JSON.parse(localStorage.getItem("venta"));
       
  });
 
+ 
  toastr.options = {
     "closeButton": true,
     "debug": false,

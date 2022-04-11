@@ -23,6 +23,7 @@ clear.addEventListener('click', ()=>{
      
 });
 
+
 toastr.options = {
     "closeButton": true,
     "debug": false,
